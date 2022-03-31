@@ -121,7 +121,8 @@ AuthenticationMenu.defaultProps = {
 
 // Typechecking props for the AuthenticationMenu
 AuthenticationMenu.propTypes = {
-  routes: PropTypes.arrayOf(PropTypes.object).isRequired,
+  // routes: PropTypes.arrayOf(PropTypes.object).isRequired,
+  routes: PropTypes.oneOfType([PropTypes.object]).isRequired,
   open: PropTypes.oneOfType([PropTypes.bool, PropTypes.object]),
   close: PropTypes.oneOfType([PropTypes.bool, PropTypes.func]),
   mobileMenu: PropTypes.bool,

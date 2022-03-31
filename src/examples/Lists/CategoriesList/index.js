@@ -114,7 +114,8 @@ function CategoriesList({ title, categories }) {
 // Typechecking props for the CategoriesList
 CategoriesList.propTypes = {
   title: PropTypes.string.isRequired,
-  categories: PropTypes.arrayOf(PropTypes.object).isRequired,
+  // categories: PropTypes.arrayOf(PropTypes.object).isRequired,
+  categories: PropTypes.oneOfType([PropTypes.object]).isRequired,
 };
 
 export default CategoriesList;

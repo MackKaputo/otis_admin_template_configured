@@ -110,7 +110,8 @@ function DefaultNavbarMobile({ routes, open, close }) {
 
 // Typechecking props for the DefaultNavbarMenu
 DefaultNavbarMobile.propTypes = {
-  routes: PropTypes.arrayOf(PropTypes.object).isRequired,
+  // routes: PropTypes.arrayOf(PropTypes.object).isRequired,
+  routes: PropTypes.oneOfType([PropTypes.object]).isRequired,
   open: PropTypes.oneOfType([PropTypes.bool, PropTypes.object]).isRequired,
   close: PropTypes.oneOfType([PropTypes.func, PropTypes.bool, PropTypes.object]).isRequired,
 };

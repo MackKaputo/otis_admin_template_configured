@@ -234,7 +234,8 @@ DefaultNavbar.defaultProps = {
 
 // Typechecking props for the DefaultNavbar
 DefaultNavbar.propTypes = {
-  routes: PropTypes.arrayOf(PropTypes.object).isRequired,
+  // routes: PropTypes.arrayOf(PropTypes.object).isRequired,
+  routes: PropTypes.arrayOf([PropTypes.object]).isRequired,
   transparent: PropTypes.bool,
   light: PropTypes.bool,
   action: PropTypes.oneOfType([

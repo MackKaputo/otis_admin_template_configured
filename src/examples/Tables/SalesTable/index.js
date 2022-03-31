@@ -89,7 +89,8 @@ SalesTable.defaultProps = {
 // Typechecking props for the SalesTable
 SalesTable.propTypes = {
   title: PropTypes.string,
-  rows: PropTypes.arrayOf(PropTypes.object),
+  // rows: PropTypes.arrayOf(PropTypes.object),
+  rows: PropTypes.oneOfType([PropTypes.object]),
   shadow: PropTypes.bool,
 };
 

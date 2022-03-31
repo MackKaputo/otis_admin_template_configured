@@ -72,7 +72,8 @@ function MDDropzone({ options }) {
 
 // Typechecking props for the MDDropzone
 MDDropzone.propTypes = {
-  options: PropTypes.objectOf(PropTypes.any).isRequired,
+  // options: PropTypes.objectOf(PropTypes.any).isRequired,
+  options: PropTypes.oneOfType([PropTypes.any]).isRequired,
 };
 
 export default MDDropzone;

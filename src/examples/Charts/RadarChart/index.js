@@ -120,7 +120,8 @@ RadarChart.propTypes = {
   }),
   title: PropTypes.string,
   description: PropTypes.oneOfType([PropTypes.string, PropTypes.node]),
-  chart: PropTypes.objectOf(PropTypes.array).isRequired,
+  // chart: PropTypes.objectOf(PropTypes.array).isRequired,
+  chart: PropTypes.oneOfType([PropTypes.array]).isRequired,
 };
 
 export default RadarChart;

@@ -288,7 +288,8 @@ DataTable.propTypes = {
   ]),
   canSearch: PropTypes.bool,
   showTotalEntries: PropTypes.bool,
-  table: PropTypes.objectOf(PropTypes.array).isRequired,
+  // table: PropTypes.objectOf(PropTypes.array).isRequired,
+  table: PropTypes.oneOfType([PropTypes.array]).isRequired,
   pagination: PropTypes.shape({
     variant: PropTypes.oneOf(["contained", "gradient"]),
     color: PropTypes.oneOf([
